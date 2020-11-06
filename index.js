@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 const homedir = require('os').homedir();
@@ -26,7 +28,9 @@ fs.readdir(directoryPath, function(err, files) {
             }
         }
 
-        fs.writeFile(json, JSON.stringify(data), err => {
+        const outputPath = path.join(__dirname, json);
+        console.log('Outputting result to: ' + outputPath);
+        fs.writeFile(outputPath, JSON.stringify(data), err => {
             if (err) throw err;
 
             console.log(json + ' done.');
