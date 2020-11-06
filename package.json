@@ -1,0 +1,11 @@
+{
+  "name": "remove-artifacts",
+  "version": "1.0.0",
+  "description": "Remove Artifacts to be used with the optimizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
